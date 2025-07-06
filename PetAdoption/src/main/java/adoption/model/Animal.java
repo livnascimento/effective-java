@@ -1,7 +1,7 @@
 package adoption.model;
 
 public interface Animal {
+    String getType();
     String getName();
-    String getBreed();
-    String getAge();
+    String getGender();
 }

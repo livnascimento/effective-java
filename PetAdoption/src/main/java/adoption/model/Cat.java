@@ -7,15 +7,15 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Dog implements Animal {
+public class Cat implements Animal{
 
     private String type;
     private String name;
     private String gender;
-    private String size;
     private String furColor;
+    private String furType;
 
-    public static Animal of(String type, String name, String gender, String size, String furColor) {
-        return new Dog(type, name, gender, size, furColor);
+    public static Animal of(String type, String name, String gender, String furColor, String furType) {
+        return new Cat(type, name, gender, furColor, furType);
     }
 }
